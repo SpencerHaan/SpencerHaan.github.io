@@ -18,19 +18,35 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
+# Dependencies
+markdown:         kramdown
+highlighter:      rouge
+
 title: Overthinking
-email: spencer@haan.dev
+tagline: Home of the thoughts that escaped my head...
 description: >- # this means to ignore newlines until "baseurl:"
   by Spencer Haan<br/><br/>
   Home of the thoughts that escaped my head...
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://spencerhaan.com" # the base hostname & protocol for your site, e.g. http://example.com
+
+author:
+  name: Spencer Haan
+
 paginate: 5
+
+# Sidebar link settings
+sidebar_home_link:  true
 
 # Build settings
 remote_theme: fongandrew/hydeout
 plugins:
   - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
+
+# disqus:
+#   shortname: 
 
 # Exclude from processing.
 # The following items will not be processed, by default.
