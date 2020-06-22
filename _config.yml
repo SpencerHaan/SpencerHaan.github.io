@@ -45,6 +45,8 @@ plugins:
   - jekyll-gist
   - jekyll-paginate
 
+google_analytics: 170201429
+
 # disqus:
 #   shortname: 
 
